@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tu Invitación Digital</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+      <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  </head>
+  <body>
+    
+<!--
+  
+
+   <!-- Hero content: will be in the middle -->
+<section class="hero is-fullheight">
+  <div id="seccion_1" class="hero-body">
+    <div class="container has-text-centered">
+     
+
+      <div class="columns is-mobile">
+        <div class="column is-three-fifths is-offset-one-fifth">
+           <h1 class="title is-1" style="color: white">A | M</h1>
+           <p class="subtitle is-1 is-primary" style="color: white">Anabel & Manuel</p>
+          <p class="title is-4" style="color: white">10-12-2024</p>
+        </div>
+        
+      
+      </div> 
+
+      
+    </div>
+  </div>
+</section>
+
+   <!-- Hero content: will be in the middle -->
+
+     <section  class="hero is-medium has-text-centered" style="background-color: #909F76;">
+      <div class="hero-body" align=""> 
+      <div id="seccion_2" class="container is-primary">
+      
+      <h2 id="nosCasamos" class="title is-2">
+        ¡Nos casamos!
+      </h2>
+      
+      <div class="columns">
+        <div class="column is-one-third"></div>
+        <div class="column"> <h3 class="subtitle is-5" style="color: #FFF;">
+        Queremos compartir contigo esta nueva etapa
+        de nuestras vidas, y celebrar en compañía de
+        familiares y amigos. Dando gracias a Dios por
+        ser guía de nuestro camino.
+      </h3> </div>
+       <div class="column"></div>
+      </div>
+     
+      <div class="column"></div>
+
+      <div class="columns is-mobile"> 
+        
+        <div class="column is-three-fifths is-offset-one-fifth">
+          <figure class="image">
+          <img src="img/fecha.png">
+          </figure>
+        </div>
+        
+      </div>
+
+</div>   
+</div>
+</section>
+
+
+<!-- Contador regresivo -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => { 
+
+        //===
+        // VARIABLES
+        //===
+        const DATE_TARGET = new Date('12/10/2024 03:30 PM');
+        // DOM for render
+        const SPAN_DAYS = document.querySelector('span#days');
+        const SPAN_HOURS = document.querySelector('span#hours');
+        const SPAN_MINUTES = document.querySelector('span#minutes');
+        const SPAN_SECONDS = document.querySelector('span#seconds');
+        // Milliseconds for the calculations
+        const MILLISECONDS_OF_A_SECOND = 1000;
+        const MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
+        const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
+        const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24
+
+        //===
+        // FUNCTIONS
+        //===
+
+        /**
+        * Method that updates the countdown and the sample
+        */
+        function updateCountdown() {
+            // Calcs
+            const NOW = new Date()
+            const DURATION = DATE_TARGET - NOW;
+            const REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
+            const REMAINING_HOURS = Math.floor((DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
+            const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
+            const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
+            // Thanks Pablo Monteserín (https://pablomonteserin.com/cuenta-regresiva/)
+
+            // Render
+            SPAN_DAYS.textContent = REMAINING_DAYS;
+            SPAN_HOURS.textContent = REMAINING_HOURS;
+            SPAN_MINUTES.textContent = REMAINING_MINUTES;
+            SPAN_SECONDS.textContent = REMAINING_SECONDS;
+        }
+
+        //===
+        // INIT
+        //===
+        updateCountdown();
+        // Refresh every second
+        setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
+    });
+    </script>
+
+ <!--  contador regresivo --> 
+
+
+
+<!-- CONTADOR -->
+  
+
+  <section class="hero is-medium is-white has-text-centered">
+  <div class="hero-body">
+    <p class="title">
+      Ya falta poco...
+    </p>
+    <h3 class="subtitle is-6">Para que empieces a agendar nuestro evento</h3>
+  </div>
+  </section>
+
+<section class="hero is-small has-text-centered">
+  <div class="hero-body">
+      <div class="container">
+
+        <div id="columna_conteo" class="columns" >
+  <div class="column"><span id="days" class="title is-1"></span><br><p class="subtitle is-3">Días</p></div>
+  <div class="column"><span id="hours" class="title is-1"></span><br><p class="subtitle is-3">Horas</p></div>
+  <div class="column"><span id="minutes" class="title is-1" ></span><br><p class="subtitle is-3">Minutos</p></div>
+  <div class="column"><span id="seconds" class="title is-1" ></span><br><p class="subtitle is-3">Segundos</p></div>
+        </div> 
+      </div>
+    </div>
+    </section> 
+
+    <!-- NOS CASAMOS-->
+
+<section class="hero is-medium is-white has-text-centered">
+  <div class="hero-body">
+   
+  </div>
+  </section>
+
+<section id="seccion_padres" class="hero is-medium has-text-centered">
+  
+  <div class="hero-body">
+    <p class="title">
+      Con la bendición de Dios y nuestros padres
+    </p>
+ <div class="columns has-text-centered">
+       <div class="column is-one-third"></div>
+      <div class="column">
+
+      </div>
+       <div class="column"></div>
+    </div>
+    
+    <div class="columns">
+       <div class="column">
+        <p class="title is-3">Novia</p>
+        <h3 class="subtitle is-5">
+          Arturo Vera Olvera <br>
+          Aurea Loaiza Guzmán</h3>
+       </div>
+  
+       <div class="column">
+         <p class="title is-3">Novio</p>
+         <h3 class="subtitle is-5">
+          Manuel Trujeque Meneses <br>
+          Marcela González Coronado</h3>
+       </div>
+    </div>
+     
+   
+  </div>
+</section>
+
+ <section class="hero is-mdium has-text-centered">
+  <div class="hero-body">
+  
+   
+  </div>
+</section>
+
+
+    <!-- NOS CASAMOS-->
+
+      <section class="hero is-small has-text-centered">
+  <div class="hero-body">
+    <p class="title">
+      Dónde y Cuándo
+    </p>
+   
+  </div>
+</section>
+
+
+  <section class="section is-small">
+  <div class="tile is-ancestor">
+  <div class="tile is-parent">
+    <article class="tile is-child box">
+      <div align="center">
+        <figure class="image is-256x256">
+        <img src="img/iglesia_1.jpg">
+        </figure>
+      </div>  
+      <h3 class="subtitle has-text-centered">Parroquia de nuestra Señora Dolores</h3>
+      <div class="content has-text-centered">
+        <p class="subtitle is-3">3:30 pm</p>
+        <h2 class="title has-text-centered is-4">Ceremonia</h2>
+        <h3>3 Oriente No. 2 Col. Centro, San Andrés Cholula, Puebla</h3>
+      </div>
+      <div align="center">
+        <a id="btn_maps" class="button" href="https://maps.app.goo.gl/2m1qovVtUFrJaxQf7" target="_blank">Ver Mapa</a>
+      </div>
+    </article>
+  </div>
+
+
+  <div class="tile is-parent">
+    <article class="tile is-child box">
+     <div align="center">
+        <figure class="image is-256x256">
+        <img src="img/salon_1.jpg">
+        </figure>
+      </div>  
+      <h3 class="subtitle has-text-centered">Parroquia de nuestra Señora Dolores</h3>
+      <div class="content has-text-centered">
+        <p class="subtitle is-3">5:30 pm</p>
+         <h2 class="title has-text-centered is-4">Recepción</h2>
+        <h3 class="subtitle is-4">3 Oriente No. 2 Col. Centro, San Andrés Cholula, Puebla</h3>
+      </div>
+      <div align="center">
+        <a id="btn_maps" class="button" href="https://maps.app.goo.gl/5J7hNr5jghbc6x3s5" target="_blank">Ver Mapa</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+<!-- SLIDE -->
+ 
+    <section class="hero is-small has-text-centered">
+  <div class="hero-body">
+  
+  </div>
+</section>
+
+<section id="amor" class="hero ">
+  <div align="center" style="margin-top:50px; margin-bottom: 50px;">
+      <p class="title" style="color: #FFF;">
+      Nuestro amor
+    </p>
+   
+  </div>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img/n1.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img/n2.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img/n3.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+ <!-- Next and previous buttons-->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles-->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+</section>
+
+<script type="text/javascript">
+  
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+
+  <!-- SLIDE -->
+
+
+ <section id="seccion_regalos" class="hero is-medium has-text-centered">
+      <div class="hero-body" align="">
+      <div  class="container">
+       
+       <div class="columns">
+       <div class="column is-one-third"></div>
+      <div class="column">
+      
+        <h2 class="title" >MESA DE REGALOS</h2>
+        <h3 class="subtitle is-6">Tu presencia es nuestro mejor regalo, pero si quieres tener un detalle con nosotros te damos algunas ideas.</h3>
+      </div>
+       <div class="column"></div>
+    </div>
+    
+    <div class="columns">
+       <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <div class="content">
+              <figure class="">
+             <img src="img/liverpool.jpg" style="width: 50%;">
+             </figure>
+               <p class="title is-4">Liverpool</p>
+               <p class="subtitle is-3">
+             258540321</p>
+              <div align="center">
+               <button class="button">Ver mesa</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+       </div>
+  
+       <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <div class="content">
+              <figure>
+               <img src="img/bbva.png"  style="width: 40%;">
+             </figure>
+              <p class="title is-4">No. Cuenta</p>
+              <h3 class="subtitle is-6">Manuel Alcantara Rosas</h3>
+              <p class="subtitle is-3">
+               3215 2158 4562 1203</p>
+            </div>
+          </div>
+        </div>
+        
+       </div>
+    </div>
+   
+  </div>
+
+
+    </section>
+
+
+<section id="asistencia" class="hero is-medium has-text-centered">
+<div class="hero-body has-text-centered">
+  <div class="columns is-centered"> 
+    <div class="column is-narrow"></div>
+    <div id="seccion_confirmar" class="column is-narrow">
+      <!--<div style="margin-top: 300px;">  Este margin hace que se el boton no se vea bien-->
+      <p class="title" style="color: #000">
+      Confirma tu asistencia </p>
+      <h3 class="subtitle is-6" style="color: #000">Queremos que disfrutes este momento con nosotros y que puedas pasarla genial en el evento.</h3>
+      <h3 class="subtitle is-6" style="color: #000">Confirma tu asistencia por whatsApp</h3>
+        
+        <a id="btn_asistir" class="button is-rounded" href="https://wa.link/ibxlpb" target="_blank">
+          <span><i class="fas fa-check"></i></span>
+          <span>¡Asistiré!</span>
+          </a>
+      
+      </div>
+    </div>
+  <div class="column is-narrow"></div>
+  </div>
+</div>
+</section>
+  <!-- ENVIAR CORREO -->
+  <!-- 
+  <div class="column" style="margin-top: 100px; margin-bottom: 100px;">
+      <form action="enviar_correo.php" method="post">
+      <div class="field">
+      <div class="control">
+            <p class="subtitle is-4" style="color: #FFF">¿Nos acompañas?</p>
+        <label class="radio">
+          <input type="radio" name="question">
+            <p class="" style="color: #FFF">Si</p>
+        </label>
+        <label class="radio">
+          <input type="radio" name="question">
+            <p style="color: #FFF">No</p>
+        </label>
+      </div>
+      </div>
+
+<div class="field">  
+    <label class="label" for="nombre" style="color: #FFF"> Nombre completo o Familia</label>
+  <div class="control">
+    <input id="nombre" class="input is-rounded is-warning" type="text" placeholder="Familia Beltrán" name="nombre">
+  </div>
+</div>
+
+<div class="field">  
+    <label class="label" for="correo" style="color: #FFF"> Correo Electrónico</label>
+  <div class="control">
+    <input id="correo" type="email" class="input is-rounded is-warning" type="text" placeholder="beltran@gmail.com" name="correo">
+  </div>
+</div>
+
+<div class="field">
+  <label class="label" style="color: #FFF">No. de invitados</label>
+
+  <div class="control">
+    <div class="select">
+      <select>
+        <option>Selecciona los pases</option>
+        <option>6</option>
+        <option>5</option>
+        <option>4</option>
+        <option>3</option>
+        <option>2</option>
+        <option>1</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class="field">
+  <label for="mensaje" class="label" style="color: #FFF">Felicita a los novios</label>
+  <div class="control">
+    <textarea id="mensaje" name="mensaje" class="textarea is-warning" placeholder="Felicidades..."></textarea>
+  </div>
+</div>
+
+<div class="field is-grouped is-grouped-centered">
+  <p class="control">
+    <input type="submit" name="Enviar">
+  </p>
+</div>
+
+</div>
+</form>
+
+
+    </div>
+  </div>    
+
+</section>
+    --> 
+  <section class="hero is-medium">
+  <div class="hero-body">
+    <div class="columns has-text-centered">
+      <div class="column">
+      <p class="title" style="margin-top:60px;">Sugerencia de vestimenta</p>
+      <h1 class="title">ELEGANTE</h1>
+      <hr color="red"/>
+      <h1 class="title is-6">Un evento para toda la familia</h1>
+      </div>
+
+
+      <div id="hombre" class="column">
+        <figure class="image is-256x256">
+        <img class="is-rounded" src="img/dress_1.jpg">
+        </figure>
+      </div>
+    <div id="mujer" class="column">
+      <figure class="image is-256x256">
+      <img class="is-rounded" src="img/dress_2.jpg">
+      </figure>
+    </div>
+
+   
+
+    </div>
+
+  </div>
+  </section>
+
+<footer id="footer" class="footer">
+  <div class="content has-text-centered">
+    <p class="title" style="color:#FFF;">Anabel & Manuel</p> 
+    
+  </div>
+</footer>
+
+  </body>
+</html>
