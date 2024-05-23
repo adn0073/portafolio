@@ -1,0 +1,108 @@
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: background: #45C4B0;
+}
+/*ANIMACION DE LA IMAGEN DEL MENU*/
+@keyframes show {
+from{
+    opacity: 0;
+    scale: 25%;
+}
+
+to{
+    opacity: 1;
+    scale: 100%;
+}
+
+}
+
+#img_invitacion, #img_sushi, #img_haandstudio {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+
+}
+
+#img_invitacion:hover{
+      transition-timing-function: ease-in;
+      transition: 1s;
+   transform: scale(0.9);
+
+} 
+#img_invitacion{
+      transition-timing-function: ease-out;
+      transition: 1s;
+} 
+
+#img_sushi:hover{
+transition-timing-function: ease-in;
+      transition: 1s;
+   transform: scale(0.9);
+} 
+#img_sushi{
+transition-timing-function: ease-out;
+      transition: 1s;
+}
+#img_haandstudio:hover{
+    transition-timing-function: ease-in;
+      transition: 1s;
+   transform: scale(0.9);
+}
+#img_haandstudio {
+    transition-timing-function: ease-out;
+      transition: 1s;
+}
+
+header {
+    background: rgba(0,0,0,0.7);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    overflow: hidden;
+}
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+nav ul li a {
+  display: block; 
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background: #45C4B0;
+}
+
+#btn_map, #btn_wa, #btn_gmail {
+color: white;
+text-decoration: none;
+}
+
+#btn_map:hover {
+    color: #45C4B0;
+}
+
+#btn_wa:hover {
+    color: #45C4B0;
+}
+#btn_gmail:hover {
+    color: #45C4B0;
+}
