@@ -11,10 +11,35 @@
   </head>
 <body>
 
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+
+});
+</script>
+
 <!-- navbar -->
 <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="#sec_inicio">
+
+      <a class="navbar-item" href="index.html">
       <figure class="image">
       <img src="img/logo1.png"></figure>
       </a>
@@ -31,17 +56,17 @@
   
       <div class="navbar-end">
        
-        <a class="navbar-item" href="#sec_inicio" style="color: #000;">
+        <a class="navbar-item " href="#sec_inicio" style="color: #000; font-family: fantasy;">
           Inicio
         </a>
-        <a class="navbar-item" href="#sec_nosotros" style="color: #000;">
+        <a class="navbar-item" href="#sec_nosotros" style="color: #000;  font-family: fantasy;">
           Nosotros
         </a>
-        <a class="navbar-item" href="#menu" style="color: #000;">
+        <a class="navbar-item" href="#menu" style="color: #000;  font-family: fantasy;">
           Menú
         </a>
         
-        <a class="navbar-item" href="#sec_visitanos" style="color: #000;">
+        <a class="navbar-item" href="#sec_visitanos" style="color: #000;  font-family: fantasy;">
           Visitanos
         </a>
 
@@ -49,6 +74,9 @@
     </div>
   </nav>
 <!-- PAGINA PRINCIPAL -->
+
+
+
 <section id="sec_inicio" class="hero is-fullheight">
     <div id="seccion_1" class="hero-body">
       <div class="container">
@@ -72,17 +100,20 @@
   </section>
 
   
+
+
+
 <!-- LO MAS VENDIDO -->
 
 <section id="sec_nosotros" class="section is-medium">
 <div class="container">
     <div class="columns">
       <div class="column"></div>
-      <div class="column is-6" align="center">
+      <div class="column is-5">
         <br>
-        <figure >
-        <iframe width="400" height="400" src="https://www.youtube.com/embed/D2gWau1l-sk?si=9S_i6u62IknzAAyo" title="Sushi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </figure>
+        <figure>
+        <iframe src="https://www.youtube.com/embed/D2gWau1l-sk?si=9S_i6u62IknzAAyo" title="Sushi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height:400px;"></iframe>
+        </figure>
       </div>
       <div class="column is-4">
         <h1 class="title is-2 is-family-primary">Bienvenidos</h1><hr style="width: 100px; border-top: 3px solid black;">
@@ -95,14 +126,13 @@
 
     <div class="columns">
       <div class="column"></div>
-      <div class="column"></div>
-      <div class="column is-4">
+      <div class="column is-5">
         <p class="subtitle is-6"><strong>Ingredientes de calidad</strong></p>
          <p class="subtitle is-5 is-family-primary"> Utilizamos solo los ingredientes más frescos y de la más alta calidad, seleccionados cuidadosamente para asegurar que cada bocado sea delicioso y auténtico. Trabajamos estrechamente con proveedores locales y de confianza para obtener pescado fresco, verduras orgánicas y arroz de la mejor calidad.</p>
         <p class="subtitle is-5 is-family-primary">Nos enorgullece ofrecer un servicio al cliente excepcional. Nuestro equipo está formado por profesionales apasionados por la hospitalidad y comprometidos a hacer que cada visita sea especial. Desde el momento en que entras por nuestra puerta hasta el último bocado de tu comida, estamos aquí para asegurarnos de que tu experiencia sea inolvidable.</p>
         
       </div>
-      <div class="column"></div>
+      
       <div class="column is-4 has-text-centered">
          <figure>
           <img src="img/entrada.jpg" style="width: 100%;">
@@ -113,10 +143,18 @@
 
 </div>   
 </section>
-<!-- PROMO  -->
+<!-- acerca de nosotoros  -->
 
-<section id="seccion_promo" class="hero is-large">
-  <div id="seccion_promo2" class="hero-body">
+<<section>
+<div class="contenedor"style="">
+  <div class="left">
+  
+
+
+  </div>
+  <div class="right">
+
+<section class="section">
   <div class="columns">
 
     <div  class="column is-4 is-offset-8" align="right">
@@ -134,38 +172,35 @@
           <p class="subtitle is-5 is-family-primary has-text-white"> 777 123 4567</p>
       </div>
       <br>
-      
-
 
     </div>
-
     </div>
+</div>
 
-  </div>
+<div class="columns">
 
-  <div class="columns">
-
-    <div  class="column is-2 is-offset-8" align="right">
+    <div class="column" align="right">
           <span style="color: white;">
         <i class="fa-brands fa-facebook fa-2xl"></i>
-      </span> 
-        </div>
-        <div  class="column" align="right">
-           <span style="color: white;">
+      </span> &nbsp &nbsp
+      <span style="color: white;">
         <i class="fa-brands fa-whatsapp fa-2xl"></i>
-      </span>
-        </div>
-        <div  class="column" align="right">
-            <span style="color: white;">
+      </span> &nbsp &nbsp
+
+  <span style="color: white;">
         <i class="fa-brands fa-instagram fa-2xl"></i>
       </span>
-        </div>
+
+    </div>
+       
       
-     
-    
-      </div>
-   
-   </div>
+</div>
+</section>
+
+  </div>
+  
+
+</div>
 </section>
 
 <!-- MENU  -->
@@ -233,7 +268,6 @@
      <h1 class="title is-2 is-family-primary has-text-centered has-text-white">Síguenos en nuestras redes sociales</h1>
      
     <h1 class="subtitle is-3 is-family-primary has-text-centered has-text-white">@nitori_sushi</h1>
-  </div>
   <br>
   <div class="columns has-text-centered">
     <div class="column"></div>
@@ -254,7 +288,7 @@
       </div>
     <div class="column"></div>
       </div>
-
+</div>
 </section>
 
 
@@ -343,6 +377,7 @@ function showSlides(n) {
 </section>
 <!-- UBICACION -->
 <section id="sec_visitanos" class="section is-medium">
+  <div class="hero-body has-text-centered">
     <div class="columns">
        <div class="column is-half is-offset-one-quarter">
         <h1 class="title is-2 is-family-primary has-text-black has-text-centered">Visítanos</h1>
@@ -353,10 +388,9 @@ function showSlides(n) {
     </div>
 
     <div class="columns">
-      <div class="column">
-        <div align="center">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7553.198169212674!2d-98.95597175138484!3d18.816012071871498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce6f6bba492ef7%3A0x732204541838c670!2sSushi%20Itto%20Cuautla!5e0!3m2!1ses-419!2smx!4v1715918868040!5m2!1ses-419!2smx" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+      <div class="column has-text-centered">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7553.198169212674!2d-98.95597175138484!3d18.816012071871498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce6f6bba492ef7%3A0x732204541838c670!2sSushi%20Itto%20Cuautla!5e0!3m2!1ses-419!2smx!4v1715918868040!5m2!1ses-419!2smx" style="border:0; width:100%; height: 300px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
           <p class="subtitle has-text-centered">Calle Alcatraz #115, Col. Las Flores, Cuautla, Morelos</p>  
           <div align="center">
          <a id="link_menu" class="button" href="">
@@ -367,7 +401,7 @@ function showSlides(n) {
         </div>
      
     </div>
-
+</div>
 </section>
 <footer class="footer has-text-white has-background-black ">
   <div class="content has-text-centered">
