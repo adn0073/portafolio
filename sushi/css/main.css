@@ -19,8 +19,22 @@ background: url(../img/s1.jpg)
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover; 
+width: 100%;
   }
-
+div.contenedor {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: url(../img/fondo_promo1.png) no-repeat fixed;
+    background-size: cover;
+    height: 80vh;
+}
+div.left{
+    
+}
+div.right{
+   background-color: #F25C05 ;
+}
 #box_1 {
   background-color: rgba(255,255,255,0.7);
   border-radius: 10px;
@@ -91,6 +105,7 @@ no-repeat center center fixed;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
+width: 100%;
 }
 
 #conoce1:hover {
@@ -206,7 +221,7 @@ text-decoration: none;
 }
 
 #btn_wa:hover {
-    color: #F25C05;
+    color: #F25C05; /*naranja*/
 }
 #btn_ig:hover {
     color: #F25C05;
