@@ -25,7 +25,7 @@ div.contenedor {
     
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: url(../img/fondo_promo1.png) no-repeat fixed;
+    background: url(../img/bg_reserva.jpg) no-repeat fixed;
     background-size: cover;
     height: 80vh;
 }
